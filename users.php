@@ -21,12 +21,14 @@ ob_start();
     <tr>
       <th scope="col">Utilisateur</th>
       <th scope="col">Prénom</th>
-      <th scope="col" colspan="2">Age</th>
+      <th scope="col">Age</th>
+      <th scope="col" colspan="2">Action</th>
     </tr>
   </thead>
   <tbody>
     <tr>
     <?php foreach ($users as $user) : ?>
+      <td><?= $user->getId() ?></td>
       <td><?= $user->getPrenom() ?></td>
       <td><?= $user->getAge() ?></td>
       <td><a href=""><i class="fa-solid fa-edit"></i></a></td>
