@@ -1,5 +1,6 @@
 <?php
-
+require_once "controller/GameController.php";
+$gameController = new GameController();
 
 if (empty($_GET['page'])) {
     require_once "view/home.view.php";
@@ -9,7 +10,7 @@ if (empty($_GET['page'])) {
             require_once "view/home.view.php";
             break;
         case 'games':
-            require_once "view/games.view.php";
+            $gameController->displayGames();
             break;
         case 'users':
             require_once "view/users.view.php";
