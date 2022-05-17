@@ -1,44 +1,17 @@
-<?php  ob_start(); 
-
-
-class Mere {
-    public $bdd = "connexion";
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-?>
-
-
-<p>Bienvenue sur notre store !</p>
-
-
-
-
 <?php
+if (empty($_GET['page'])) {
+    require_once "view/home.view.php";
+}else {
+    switch ($_GET['page']) {
+        case 'accueil':
+            require_once "view/home.view.php";
+            break;
+        case 'games':
+            require_once "view/games.view.php";
+            break;
+        case 'users':
+            require_once "view/users.view.php";
+            break;
 
-$content =ob_get_clean();
-$title = "Bienvenue chez Game-X";
-require_once "base.html.php";
-
-?>
+    }
+}

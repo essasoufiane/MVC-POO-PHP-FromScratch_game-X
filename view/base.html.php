@@ -21,13 +21,13 @@
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.php">Accueil</a>
+                    <a class="nav-link" href="accueil">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="games.php">Jeux</a>
+                    <a class="nav-link" href="games">Jeux</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="users.php">Utilisateur</a>
+                    <a class="nav-link" href="users">Utilisateur</a>
                 </li>
             </ul>
         </div>
