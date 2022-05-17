@@ -14,8 +14,7 @@ if (empty($_GET['page'])) {
             require_once "view/home.view.php";
             break;
         case 'games':
-            if ($url[1]) {
-                # code...
+            if (empty($url[1])) {
                 $gameController->displayGames();
             }
             break;
