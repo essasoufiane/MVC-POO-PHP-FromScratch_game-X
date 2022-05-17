@@ -7,12 +7,17 @@ $gameController = new GameController();
 if (empty($_GET['page'])) {
     require_once "view/home.view.php";
 }else {
-    switch ($_GET['page']) {
+    $url = explode("/", filter_var($_GET['page'], FILTER_SANITIZE_URL) );
+
+    switch ($url[0]) {
         case 'accueil':
             require_once "view/home.view.php";
             break;
         case 'games':
-            $gameController->displayGames();
+            if ($url[1]) {
+                # code...
+                $gameController->displayGames();
+            }
             break;
         case 'users':
             require_once "view/users.view.php";
