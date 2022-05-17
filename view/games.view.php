@@ -1,17 +1,5 @@
 <?php 
-require_once "GameManager.php";
 
-
-$gameManager = new GameManager();
-
-$gameManager->loadGames();
-
-$games = $gameManager->getGame();
-
-// var_dump($games);
-$games = $gameManager->getGame();
-
-$gameManager->loadGames();
 ob_start(); 
 
 ?>
