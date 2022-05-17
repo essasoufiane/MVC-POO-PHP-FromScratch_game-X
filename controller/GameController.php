@@ -13,6 +13,11 @@ class GameController {
         $this->gameManager->loadGames();
         
     }
+
+    public function displayGames(){
+        $games = $this->gameManager->getGame(); 
+        require_once "view/games.view.php";
+    }
 }
 
 

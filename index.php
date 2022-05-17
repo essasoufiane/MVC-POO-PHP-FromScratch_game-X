@@ -1,4 +1,6 @@
 <?php
+
+
 if (empty($_GET['page'])) {
     require_once "view/home.view.php";
 }else {
