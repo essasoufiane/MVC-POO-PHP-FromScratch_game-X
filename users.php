@@ -31,8 +31,8 @@ ob_start();
       <td><?= $user->getId() ?></td>
       <td><?= $user->getPrenom() ?></td>
       <td><?= $user->getAge() ?></td>
-      <td><a href=""><i class="fa-solid fa-edit"></i></a></td>
-      <td><a href=""><i class="fa-solid fa-trash"></i></a></td>
+      <td><a href="#"><i class="fa-solid fa-edit"></i></a></td>
+      <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
     </tr>
     <?php endforeach; ?>
     <!-- <tr>
